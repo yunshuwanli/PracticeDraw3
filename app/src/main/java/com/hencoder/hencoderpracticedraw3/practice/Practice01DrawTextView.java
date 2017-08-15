@@ -33,5 +33,9 @@ public class Practice01DrawTextView extends View {
 
         // 使用 drawText() 来绘制文字
         // 文字坐标： (50, 100)
+        // 这个用来让所有文字互相对齐的基准线，就是基线( baseline )。
+        // drawText() 方法参数中的 y 值，就是指定的基线的位置。
+        //  y坐标100 实际距原点100-60
+        canvas.drawText(text, 50, 100, paint);
     }
 }
